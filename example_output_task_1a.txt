@@ -1,0 +1,275 @@
+=====================================
+
+         COURSEWORK 1 TASK 1A
+          
+=====================================
+
+>> SOLUTION: REINFORCEMENT LEARNING
+
+>> EXPLAIN IDEA: CREATE MODEL A TO PREDICT HYPERPARAMETER X WHICH X IS AN OPTIMAL HYPERPARAMETER FOR MODEL B
+
+>> START BY RANDOMLY PICK M, THEN REWARD THE MODEL IF M IS GOOD AND PUNISH IT IF M IS BAD.
+
+>> REFERENCE: https://doi.org/10.48550/arXiv.1611.01578 (ONLY THE CONCEPT! I DIDN'T USE RNN LIKE IN THE PAPER, I USE SGD)
+
+=====================================
+
+INITIAL PROBABILITIES: tensor([0.3333, 0.3333, 0.3333])
+
+=====================================
+
+ITERATION 1/10 TRYING M = 2
+
+Initial Loss = 7.290976047515869
+
+Iteration      Loss      
+-------------------------
+[Iteration 100] Loss = 10.322159767150879
+[Iteration 200] Loss = 5.981489658355713
+[Iteration 300] Loss = 4.498806953430176
+[Iteration 400] Loss = 5.0377583503723145
+[Iteration 500] Loss = 9.277934074401855
+[Iteration 600] Loss = 8.420278549194336
+[Iteration 700] Loss = 5.679337501525879
+[Iteration 800] Loss = 4.507140636444092
+[Iteration 900] Loss = 2.5223758220672607
+-------------------------
+
+*** Final Loss = 0.6767250895500183
+
+*** F1-SCORE = 0.7272727272727273
+
+UPDATED PROBABILITIES: tensor([0.3252, 0.3497, 0.3252])
+
+!!! ALERT !!! OPTIMAL F1-SCORE CHANGE FROM 0.0 TO 0.7272727272727273
+
+=====================================
+
+ITERATION 2/10 TRYING M = 2
+
+Initial Loss = 10.30950927734375
+
+Iteration      Loss      
+-------------------------
+[Iteration 100] Loss = 9.687172889709473
+[Iteration 200] Loss = 3.6580746173858643
+[Iteration 300] Loss = 4.989169597625732
+[Iteration 400] Loss = 7.710002422332764
+[Iteration 500] Loss = 7.926663398742676
+[Iteration 600] Loss = 4.630038261413574
+[Iteration 700] Loss = 5.178653240203857
+[Iteration 800] Loss = 5.0808587074279785
+[Iteration 900] Loss = 0.500460147857666
+-------------------------
+
+*** Final Loss = 0.6903039813041687
+
+*** F1-SCORE = 0.709090909090909
+
+UPDATED PROBABILITIES: tensor([0.3254, 0.3493, 0.3254])
+
+=====================================
+
+ITERATION 3/10 TRYING M = 1
+
+Initial Loss = 3.4980838298797607
+
+Iteration      Loss      
+-------------------------
+[Iteration 100] Loss = 1.7560161352157593
+[Iteration 200] Loss = 1.1396673917770386
+[Iteration 300] Loss = 0.7649824023246765
+[Iteration 400] Loss = 0.7476676106452942
+[Iteration 500] Loss = 0.7549968361854553
+[Iteration 600] Loss = 0.6952795386314392
+[Iteration 700] Loss = 0.7289566397666931
+[Iteration 800] Loss = 0.6326790452003479
+[Iteration 900] Loss = 0.6571235060691833
+-------------------------
+
+*** Final Loss = 0.7053181529045105
+
+*** F1-SCORE = 0.45
+
+UPDATED PROBABILITIES: tensor([0.3192, 0.3526, 0.3282])
+
+=====================================
+
+ITERATION 4/10 TRYING M = 3
+
+Initial Loss = 8.784294128417969
+
+Iteration      Loss      
+-------------------------
+[Iteration 100] Loss = 6.907756805419922
+[Iteration 200] Loss = 6.907783508300781
+[Iteration 300] Loss = 8.074875831604004
+[Iteration 400] Loss = 7.01458740234375
+[Iteration 500] Loss = 13.8140287399292
+[Iteration 600] Loss = 6.908280372619629
+[Iteration 700] Loss = 8.069106101989746
+[Iteration 800] Loss = 8.065779685974121
+[Iteration 900] Loss = 12.663827896118164
+-------------------------
+
+*** Final Loss = 6.918684482574463
+
+*** F1-SCORE = 0.5544554455445544
+
+UPDATED PROBABILITIES: tensor([0.3210, 0.3547, 0.3244])
+
+=====================================
+
+ITERATION 5/10 TRYING M = 1
+
+Initial Loss = 1.5197175741195679
+
+Iteration      Loss      
+-------------------------
+[Iteration 100] Loss = 0.9651150107383728
+[Iteration 200] Loss = 0.5564590096473694
+[Iteration 300] Loss = 0.9039427638053894
+[Iteration 400] Loss = 0.9642878770828247
+[Iteration 500] Loss = 0.6994658708572388
+[Iteration 600] Loss = 0.7019213438034058
+[Iteration 700] Loss = 0.7127082347869873
+[Iteration 800] Loss = 0.7472516298294067
+[Iteration 900] Loss = 0.5623742938041687
+-------------------------
+
+*** Final Loss = 0.6614848971366882
+
+*** F1-SCORE = 0.12244897959183672
+
+UPDATED PROBABILITIES: tensor([0.3077, 0.3619, 0.3304])
+
+=====================================
+
+ITERATION 6/10 TRYING M = 2
+
+Initial Loss = 6.3756818771362305
+
+Iteration      Loss      
+-------------------------
+[Iteration 100] Loss = 3.12275767326355
+[Iteration 200] Loss = 5.174150466918945
+[Iteration 300] Loss = 2.730454444885254
+[Iteration 400] Loss = 0.7699417471885681
+[Iteration 500] Loss = 0.6972593069076538
+[Iteration 600] Loss = 0.6442725658416748
+[Iteration 700] Loss = 0.7316193580627441
+[Iteration 800] Loss = 0.6497940421104431
+[Iteration 900] Loss = 0.6100067496299744
+-------------------------
+
+*** Final Loss = 0.7171542048454285
+
+*** F1-SCORE = 0.5833333333333334
+
+UPDATED PROBABILITIES: tensor([0.3091, 0.3588, 0.3321])
+
+=====================================
+
+ITERATION 7/10 TRYING M = 1
+
+Initial Loss = 3.0213656425476074
+
+Iteration      Loss      
+-------------------------
+[Iteration 100] Loss = 1.3711905479431152
+[Iteration 200] Loss = 1.650834321975708
+[Iteration 300] Loss = 0.8630352020263672
+[Iteration 400] Loss = 0.7861613035202026
+[Iteration 500] Loss = 0.948764443397522
+[Iteration 600] Loss = 0.9207758903503418
+[Iteration 700] Loss = 0.7225615978240967
+[Iteration 800] Loss = 0.8022223711013794
+[Iteration 900] Loss = 0.7080983519554138
+-------------------------
+
+*** Final Loss = 0.6843221783638
+
+*** F1-SCORE = 0.042553191489361694
+
+UPDATED PROBABILITIES: tensor([0.2942, 0.3668, 0.3390])
+
+=====================================
+
+ITERATION 8/10 TRYING M = 1
+
+Initial Loss = 1.5778497457504272
+
+Iteration      Loss      
+-------------------------
+[Iteration 100] Loss = 0.915362536907196
+[Iteration 200] Loss = 0.6008038520812988
+[Iteration 300] Loss = 0.5815829634666443
+[Iteration 400] Loss = 0.7853215336799622
+[Iteration 500] Loss = 0.7094095945358276
+[Iteration 600] Loss = 0.8290058374404907
+[Iteration 700] Loss = 0.7817509174346924
+[Iteration 800] Loss = 0.6743858456611633
+[Iteration 900] Loss = 0.5640875697135925
+-------------------------
+
+*** Final Loss = 0.7972617149353027
+
+*** F1-SCORE = 0.21428571428571427
+
+UPDATED PROBABILITIES: tensor([0.2830, 0.3729, 0.3441])
+
+=====================================
+
+ITERATION 9/10 TRYING M = 2
+
+Initial Loss = 6.604685306549072
+
+Iteration      Loss      
+-------------------------
+[Iteration 100] Loss = 5.84283971786499
+[Iteration 200] Loss = 5.829784393310547
+[Iteration 300] Loss = 2.780287504196167
+[Iteration 400] Loss = 4.628785610198975
+[Iteration 500] Loss = 0.8860284090042114
+[Iteration 600] Loss = 1.5854612588882446
+[Iteration 700] Loss = 0.6614514589309692
+[Iteration 800] Loss = 0.8181647658348083
+[Iteration 900] Loss = 0.4033827483654022
+-------------------------
+
+*** Final Loss = 0.6488670706748962
+
+*** F1-SCORE = 0.5617977528089888
+
+UPDATED PROBABILITIES: tensor([0.2845, 0.3693, 0.3462])
+
+=====================================
+
+ITERATION 10/10 TRYING M = 2
+
+Initial Loss = 7.041932582855225
+
+Iteration      Loss      
+-------------------------
+[Iteration 100] Loss = 7.089911937713623
+[Iteration 200] Loss = 7.644027233123779
+[Iteration 300] Loss = 9.543181419372559
+[Iteration 400] Loss = 3.750373601913452
+[Iteration 500] Loss = 2.8941023349761963
+[Iteration 600] Loss = 3.7982337474823
+[Iteration 700] Loss = 2.454711437225342
+[Iteration 800] Loss = 0.48557233810424805
+[Iteration 900] Loss = 1.6880066394805908
+-------------------------
+
+*** Final Loss = 1.4899704456329346
+
+*** F1-SCORE = 0.5631067961165049
+
+UPDATED PROBABILITIES: tensor([0.2860, 0.3656, 0.3484])
+
+=====================================
+
+OPTIMAL M FOUND = 2 WITH F1-SCORE = 0.7272727272727273
+
+=====================================
